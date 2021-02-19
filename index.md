@@ -11,7 +11,7 @@ Esto es un informe para poder llevar a cabo la **práctica 1 de Desarrollo de Si
 Los objetivos de esta práctica han sido configurar la maquina virtual en el IaaS, además de instalar y configurar todas las herramientas necesarias para comenzar a trabajar la asignatura.
 
 ### _**Pasos a seguir para la configuración de la **máquina virtual del IaaS**.**_
-#### 1. Configurar el servicio VPN de la ULL.
+##### 1. Configurar el servicio VPN de la ULL.
 
   Para conectarnos remotamente al servicio IaaS desde fuera de la red universitaria, es necesario conectarse a la VPN de la ULL. Para ello, accederemos a la [CONFIGURACION VPN](https://www.ull.es/servicios/stic/2020/12/01/servicio-de-vpn-de-la-ull/) de la ULL y descargaremos las instrucciones correspondientes a nuestro sistema operativo, si las seguimos, nos conectaremos a la red de la universidad remotamente.
   
