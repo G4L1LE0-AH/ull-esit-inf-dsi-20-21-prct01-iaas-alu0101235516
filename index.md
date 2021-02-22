@@ -15,7 +15,7 @@ Los objetivos de esta práctica han sido configurar la maquina virtual en el Iaa
 
   Para conectarnos remotamente al servicio IaaS desde fuera de la red universitaria, es necesario conectarse a la VPN de la ULL. Para ello, accederemos a la [CONFIGURACION VPN](https://www.ull.es/servicios/stic/2020/12/01/servicio-de-vpn-de-la-ull/) de la ULL y descargaremos las instrucciones correspondientes a nuestro sistema operativo, si las seguimos, nos conectaremos a la red de la universidad remotamente.
   
-##### 2. Acceder al servicio IaaS de la ULL y obtenemos la IP.
+##### 2. Acceso al IaaS.
 
   Una vez conectada la VPN deberemos acceder al [Servicio IaaS de la ULL](https://iaas.ull.es/ovirt-engine/sso/login.html) e introducir nuestras credenciales. A continuación encontraremos todas las máqinas virtuales que tenemos, seleccionaremos la que se llama *DSI*, y pulsaremos **Ejecutar** para iniciar la máquina.
 Una vez iniciada la máquina virtual, en la parte derecha de la interfaz, donde se indica *Interfaces de red*, encontraremos la IP asignada a la interfaz de nuestra máquina.
@@ -79,9 +79,7 @@ A parte de esto, tambien deberemos modificar ciertos parámetros en el fichero `
 
 Ya hemos cambiado el nombre de host antiguo `ubuntu`, por el nuevo `iaas-dsi`.
 
-##### 5. Actualizar los cambios y reiniciar la máquina virtual.
-
-  Actualizamos la máquina::
+  Actualizamos la máquina:
 
 ```bash
   usuario@ubuntu:~$ sudo apt update
@@ -120,7 +118,7 @@ Ya hemos cambiado el nombre de host antiguo `ubuntu`, por el nuevo `iaas-dsi`.
   ...
 ```
 
-##### 7. Configurar la infraestructura de la clave pública-privada de nuestra máquina local.
+##### 7. Configuración de la clave pública.
 
 Para comprobar si ya tenemos generada una clave pública-privada ejecutaremos el comando:
 
@@ -195,8 +193,8 @@ Ahora nos podemos conectar a la máquina virtual por `SSH` simplemente con el no
 ```
 
 
-### _**Pasos a seguir para instalar git y Node.js en la máquina virtual del IaaS.**_
-##### 1. Instalare git en la máquina virtual.
+### _**Pasos a seguir para instalar git y Node.js en nuestra máquina.**_
+##### 1. Instalar git en la máquina virtual.
 
   Ejectuamos lo siguiente:
 
@@ -209,7 +207,7 @@ Ahora nos podemos conectar a la máquina virtual por `SSH` simplemente con el no
   0 actualizados, 0 nuevos se instalarán, 0 para eliminar y 0 no actualizados.
 ```
 
-##### 2. Configurar git en la máquina virtual.
+##### 2. Configuración de git.
 
   Para configurar git se puede seguir la guia [configurar git por primera vez](https://git-scm.com/book/es/v2/Inicio---Sobre-el-Control-de-Versiones-Configurando-Git-por-primera-vez), pero la configuración se reduce básicamente en los siguientes comandos con los datos correspondientes:
 
@@ -226,7 +224,7 @@ Ahora nos podemos conectar a la máquina virtual por `SSH` simplemente con el no
   user.email=alu0101235516@ull.edu.es
 ```
 
-##### 3. Configurar el prompt de la terminal en la máquina virtual.
+##### 3. Configuración del prompt.
 
   Ahora, configuraremos el prompt de la terminal de la máquina virtual para que aparezca la rama actual en la que nos encontramos cuando accedemos a algún directorio asociado con un repositorio git. Para hacer esto, lo primero que haremos es descargar el script [git prompt](https://github.com/git/git/blob/master/contrib/completion/git-prompt.sh) y se creará el fichero `git-prompt.sh`.
 
